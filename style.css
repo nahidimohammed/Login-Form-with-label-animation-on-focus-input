@@ -1,0 +1,75 @@
+*{
+    font-size: 1.3rem;
+    color: white;
+
+}
+body{
+    height: 100%;
+    background-color: black;
+}
+form{
+    border: 2px solid;
+    margin: auto;
+    width: 50%;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    padding: 30px;
+
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+form > h1 {
+    margin-left: 2%;
+    font-size: 40px;
+}
+form > div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+
+}
+form > div > input {
+    position: absolute;
+    left: 2%;
+    width: 95%;
+    border: 0px;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    padding-bottom: 5px;
+    background-color:transparent;
+}
+form > div > label {
+    position: absolute;
+    width: fit-content;
+    left:2%;
+    transform: translate(0% , 0%);
+    transition: all 1s;
+    background-color: transparent
+}
+form > div > input:not(:placeholder-shown) + label{
+    transform: translate(0% , -100%);
+    transition: all 1s;
+}
+form > div > input:focus + label {
+    transition: all 1s;
+    transform: translate(0% , -100%);
+}
+form > div > button {
+    width: 97%;     
+    margin-left: 2%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border: 2px solid white;
+    background-color: black;
+}
+form > div > button:hover {
+    background-color: #555;
+}
